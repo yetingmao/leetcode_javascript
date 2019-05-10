@@ -1,7 +1,6 @@
 ## 项目说明 ##
 * 在leetcode刷题
 * 使用javascript语言
-* 先从简单的来
 
 `````
 1. Two Sum
@@ -23,7 +22,9 @@ You may assume that each input would have exactly one solution, and you may not 
         }
         return arr;
       };
+`````
 
+`````
 2.Reverse Integer
 
 Given a 32-bit signed integer, reverse digits of an integer.
@@ -42,7 +43,9 @@ var reverse = function (x) {
     }
     return b;
 };
+`````
 
+`````
 3.Palindrome Number
 
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
@@ -62,7 +65,9 @@ var isPalindrome = function (x) {
         return false;
     }
 };
+`````
 
+`````
 4. Longest Common Prefix
 
 Write a function to find the longest common prefix string amongst an array of strings.
@@ -97,5 +102,4 @@ var longestCommonPrefix = function (strs) {
     } while (result && i < strs[0].length);
     return cp;
 };
-
 `````
