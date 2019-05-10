@@ -1,6 +1,10 @@
-## 项目说明 ##
-* 在leetcode刷题
+## 说明 ##
+* 在leetcode上的题目
 * 使用javascript语言
+* 目前只有初级的题目，保证一周抽时间做一道
+
+## 依赖 ##
+* yetm
 
 `````
 1. Two Sum
@@ -48,7 +52,8 @@ var reverse = function (x) {
 `````
 3.Palindrome Number
 
-Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+Determine whether an integer is a palindrome. 
+An integer is a palindrome when it reads the same backward as forward.
 
 var isPalindrome = function (x) {
     if (x < 0) {
