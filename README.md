@@ -108,3 +108,82 @@ var longestCommonPrefix = function (strs) {
     return cp;
 };
 `````
+
+`````
+5. Valid Parentheses
+
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
+ determine if the input string is valid.
+
+An input string is valid if:
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+
+var isValid = function (s) {
+    if (s === undefined) {
+        return false;
+    }
+    if (s.length % 2 === 1) {
+        return false;
+    }
+    const a = [];
+    let o = 1;
+    let result = true;
+    for (const i of s) {
+        switch (i) {
+            case "{":
+                a.unshift(i);
+                break;
+            case "(":
+                a.unshift(i);
+                break;
+            case "[":
+                a.unshift(i);
+                break;
+            case "}":
+                if (a[0] !== "{") {
+                    result = false;
+                } else {
+                    a.shift();
+                }
+                break;
+            case ")":
+                if (a[0] !== "(") {
+                    result = false;
+                } else {
+                    a.shift();
+                }
+                break;
+            case "]":
+                if (a[0] !== "[") {
+                    result = false;
+                } else {
+                    a.shift();
+                }
+                break;
+            default:
+                break;
+        }
+        if (result === false) {
+            break;
+        }
+        if (o === s.length) {
+          if (a.length > 0) {
+                result = false;
+                break;
+            }
+        }
+        o++;
+    }
+    return result;
+};
+
+//其他解法
+* 这个方法超棒
+    * 栈中放的只有当前需要出现的右部
+	* 当出现一个左部的时候，就将应该出现的右部放入栈中
+	* 当出现右部时和栈顶元素比较，如果不相同则返回FALSE
+	* 最后栈为非空时也会返回FALSE
+	* 都没有问题的时候会返回TRUE*
+
+`````
