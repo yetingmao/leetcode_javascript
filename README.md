@@ -222,3 +222,44 @@ var removeElement = function (nums, val) {
     return nums.length;
 };
 `````
+************
+### Search Insert Position(搜索插入位置)
+##### 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+##### 你可以假设数组中无重复元素。
+`````
+var searchInsert = function (nums, target) {
+    let n = nums.indexOf(target);
+    if (n === -1) {
+        if (target <= nums[0]) {
+            n = 0;
+        } else if (target >= nums[nums.length - 1]) {
+            n = nums.length;
+        } else {
+            for (let index = 0; index < nums.length; index++) {
+                if (target >= nums[index] && target <= nums[index + 1]) {
+                    n = index + 1;
+                    break;
+                }
+            }
+        }
+    }
+    return n;
+    // const n = nums.indexOf(target);
+    // if (n > -1) {
+    //     return n;
+    // }
+    // if (target <= nums[0]) {
+    //     nums.unshift(target);
+    // } else if (target >= nums[nums.length - 1]) {
+    //     nums.push(target);
+    // } else {
+    //     for (let index = 0; index < nums.length; index++) {
+    //         if (target >= nums[index] && target <= nums[index + 1]) {
+    //             nums.splice(index, 0, target);
+    //             break;
+    //         }
+    //     }
+    // }
+    // return nums;
+};
+`````
