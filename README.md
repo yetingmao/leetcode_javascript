@@ -6,31 +6,26 @@
 ## 依赖 ##
 * yetm
 
-************
 
 #### Two Sum(两数之和)
 ##### 给定一个整数数组nums和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
 ##### 你可以假设每种输入只会对应一个答案。但是你不能重复利用这个数组中同样的元素。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
-
 ************
 
 #### Reverse Integer(整数反转)
 ##### 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
-
 ************
 
 #### Palindrome Number(回文数)
 ##### 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
-
 ************
 
 ####  Longest Common Prefix(最长公共前缀)
 ##### 编写一个函数来查找字符串数组中的最长公共前缀，如果不存在公共前缀，返回空字符串 ""。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
-
 ************
 
 ### Valid Parentheses(有效的括号)
@@ -44,14 +39,12 @@
 ##### 3. 当出现右部时和栈顶元素比较，如果不相同则返回FALSE
 ##### 4. 最后栈为非空时也会返回FALSE
 ##### 5. 都没有问题的时候会返回TRUE
-
 ************
 
 #### Remove Duplicates from Sorted Array(删除排序数组中的重复项)(第一个方法是废的)
 ##### 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
 ##### 不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。
-[Remove Duplicates from Sorted Array](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
-
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
 ************
 
 #### Remove Element(移除元素)
@@ -59,11 +52,11 @@
 ##### 不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。
 ##### 元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
-
 ************
 
 #### Search Insert Position(搜索插入位置)
 ##### 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
 ##### 你可以假设数组中无重复元素。
-*我把插入数组之后的方法也写了(注释中)*
-[Remove Element](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
+*##### 我把插入数组之后的方法也写了(注释中)*
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
+************
