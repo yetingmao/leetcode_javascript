@@ -73,6 +73,5 @@
 ##### 21 被读作 "one 2",  "one 1" （"一个二" ,  "一个一") , 即 1211。
 ##### 给定一个正整数 n（1 ≤ n ≤ 30），输出报数序列的第 n 项。
 ##### 注意：整数顺序将表示为一个字符串。
-##### 你可以假设数组中无重复元素。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_20.ts)
 ************
