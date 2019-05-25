@@ -1,0 +1,12 @@
+{
+  "name": "leetcode_script",
+  "version": "0.0.1",
+  "repository": "https://github.com/yetingmao/leetcode_javascript",
+  "author": "yetm",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.0.0"
+  },
+  "main": "index.js"
+}

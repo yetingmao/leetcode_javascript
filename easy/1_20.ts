@@ -77,7 +77,7 @@ const longestCommonPrefix = function (strs: string[]) {
 };
 
 //5,Valid Parentheses(有效的括号)
-const isValid = function (s) {
+const isValid = function (s: string) {
     if (s === undefined) {
         return false;
     }
@@ -137,7 +137,7 @@ const isValid = function (s) {
 };
 
 //6,Remove Duplicates from Sorted Array(删除排序数组中的重复项)
-const removeDuplicates1 = function (nums) {
+const removeDuplicates1 = function (nums: number[]) {
     const map = new Map();
     nums.reverse();
     for (const k of nums) {
@@ -157,7 +157,7 @@ const removeDuplicates1 = function (nums) {
     }
     return nums.length;
 };
-const removeDuplicates = function (nums) {
+const removeDuplicates = function (nums: number[]) {
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] === nums[i + 1]) {
             nums.splice(i, 1);
@@ -168,7 +168,7 @@ const removeDuplicates = function (nums) {
 };
 
 //7,Remove Element(移除元素)
-const removeElement = function (nums, val) {
+const removeElement = function (nums: number[], val: number) {
     for (let i = 0; i < nums.length; i++) {
         const n = nums[i];
         if (n === val) {
@@ -180,7 +180,7 @@ const removeElement = function (nums, val) {
 };
 
 //8,Search Insert Position(搜索插入位置)
-var searchInsert = function (nums, target) {
+var searchInsert = function (nums: number[], target: number) {
     let n = nums.indexOf(target);
     if (n === -1) {
         if (target <= nums[0]) {
@@ -214,4 +214,31 @@ var searchInsert = function (nums, target) {
     //     }
     // }
     // return nums;
+};
+// 9.Count and Say(报数)
+const countAndSay = function (n: number) {
+    let i = 1;
+    let a = "1";
+    do {
+        if (i >= n) {
+            break;
+        }
+        i++;
+        let k: string[] = [];
+        let v: number[] = [];
+        for (let index = 0; index < a.length; index++) {
+            if (k[k.length - 1] === a[index]) {
+                v[v.length - 1] = v[v.length - 1] + 1;
+            } else {
+                k.push(a[index]);
+                v.push(1);
+            }
+        }
+        let a1 = "";
+        for (let index = 0; index < k.length; index++) {
+            a1 += `${v[index]}${k[index]}`;
+        }
+        a = a1;
+    } while (i < n);
+    return a;
 };
