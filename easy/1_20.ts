@@ -242,3 +242,36 @@ const countAndSay = function (n: number) {
     } while (i < n);
     return a;
 };
+//10.最大子序和
+const maxSubArray1 = function (nums: number[]) {
+    let max = nums[0];
+    let n = 0;
+    do {
+        let value = 0;
+        for (let index = n; index < nums.length; index++) {
+            value += nums[index];
+            if (max < value) {
+                max = value;
+            }
+        }
+        n++;
+    } while (n < nums.length);
+    return max;
+};
+const maxSubArray2 = function (nums: number[]) {
+    const l = nums.length;
+    let max = nums[0];
+    let value = 0;
+    let n = 0;
+    for (let index = n; index < l; index++) {
+        value += nums[index];
+        if (max < value) {
+            max = value;
+        }
+        if (index === l - 1) {
+            value = 0;
+            index = n++;
+        }
+    }
+    return max;
+};
