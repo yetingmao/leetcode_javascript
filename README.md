@@ -80,3 +80,9 @@
 ##### 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/1_10.ts)
 ************
+
+####  Length of Last Word(最后一个单词的长度)
+##### 给定一个仅包含大小写字母和空格 ' ' 的字符串，返回其最后一个单词的长度。如果不存在最后一个单词，请返回 0 。
+##### 说明：一个单词是指由字母组成，但不包含任何空格的字符串。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/11_20.ts)
+************
