@@ -8,3 +8,36 @@ const lengthOfLastWord = function (s: string) {
     const sll = sl[sl.length - 1].length
     return sll;
 };
+// 12.加一 （不要超过最大数）
+const plusOne = function (digits: number[]) {
+    digits.reverse();
+    let i = 0;
+    for (const d of digits) {
+        if (d + 1 <= 9) {
+            digits[i] = (d + 1);
+            break;
+        } else {
+            digits[i] = 0;
+            if (i === digits.length - 1) {
+                digits[i + 1] = 1;
+                break;
+            } else {
+                i++;
+            }
+        }
+    }
+    return digits.reverse();
+};
+var plusOne1 = function (digits) {
+    const narr = [];
+    let i = digits.length;
+    let n = 1;
+    let curr;
+    while (i > 0 || n) {
+        --i;
+        curr = (i >= 0 ? digits[i] : 0) + n;
+        n = curr / 10 | 0;//
+        narr.unshift(curr % 10);
+    }
+    return narr;
+};
