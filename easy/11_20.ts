@@ -41,3 +41,25 @@ var plusOne1 = function (digits) {
     }
     return narr;
 };
+//13二进制求和
+var addBinary = function (a: string, b: string) {
+    let len = 0;
+    const al = a.length;
+    const bl = b.length;
+    let s = "";
+    let add = 0;
+    do {
+        len++;
+        const ad = a[al - len] ? a[al - len] : 0;
+        const bd = b[bl - len] ? b[bl - len] : 0;
+        if (ad !== 0 || bd !== 0) {
+            const data = parseInt(`${ad}`, 10) + parseInt(`${bd}`, 10) + add;
+            s = data % 2 + s;
+            add = Math.floor(data / 2);
+        } else {
+            s = add !== 0 ? add + s : s;
+            break;
+        }
+    } while (true);
+    return s;
+};
