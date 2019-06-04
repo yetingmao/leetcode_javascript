@@ -63,3 +63,20 @@ var addBinary = function (a: string, b: string) {
     } while (true);
     return s;
 };
+// 14 爬楼梯
+var climbStairs = function (n: number) {
+    if (n === 1) {
+        return 1;
+    }
+    if (n === 2) {
+        return 2
+    }
+    let a = 1;
+    let b = 2;
+    for (let i = 3; i <= n; i++) {
+        const r = a + b;
+        a = b;
+        b = r;
+    }
+    return b
+};

@@ -98,3 +98,11 @@
 ##### 给定两个二进制字符串，返回他们的和（用二进制表示）。输入为非空字符串且只包含数字 1 和 0。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/11_20.ts)
 ************
+
+####  Climbing Stairs(爬楼梯)
+##### 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
+#####  注意：给定 n 是一个正整数;
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/11_20.ts)
+###### 爬楼梯直接思路递归法，登顶的最后一步有两种走法，也就是1步，后者2步。
+###### 所以可以得出公式f(n) = f(n-1) + f(n-2).
+************
