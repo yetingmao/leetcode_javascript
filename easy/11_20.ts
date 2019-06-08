@@ -80,3 +80,33 @@ var climbStairs = function (n: number) {
     }
     return b
 };
+// 15.合并两个有序数组
+var merge = function (nums1: number[], m: number, nums2: number[], n: number) {
+    let c1 = 0;
+    let c2 = 0;
+    const len = nums1.length;
+    while (c1 < m && c2 < n) {
+        if (nums1[c1] < nums2[c2]) {
+            nums1.push(nums1[c1]);
+            c1++;
+        } else {
+            nums1.push(nums2[c2]);
+            c2++;
+        }
+    }
+    if (c1 < m) {
+        nums1.splice(nums1.length, 0, ...nums1.slice(c1, m));
+    }
+    if (c2 < n) {
+        nums1.splice(nums1.length, 0, ...nums2.slice(c2, n));
+    }
+    nums1.splice(0, len);
+};
+var merge1 = function (nums1: number[], m: number, nums2: number[], n: number) {
+    nums1.splice(m, nums1.length - m, ...(nums2.slice(0, n)));
+    nums1.sort((a, b) => a - b);
+};
+var merge2 = function (nums1: number[], m: number, nums2: number[], n: number) {
+    nums1.splice(m, n, ...nums2);
+    nums1.sort((a, b) => a - b);
+};
