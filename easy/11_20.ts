@@ -110,3 +110,10 @@ var merge2 = function (nums1: number[], m: number, nums2: number[], n: number) {
     nums1.splice(m, n, ...nums2);
     nums1.sort((a, b) => a - b);
 };
+// 16. 相同的树
+var isSameTree = function (p: any, q: any) {
+    if (!p && !q) {
+        return true;
+    }
+    return ((p !== null && q !== null) && (p.val === q.val) && isSameTree(p.left, q.left) && isSameTree(p.right, q.right));
+};

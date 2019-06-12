@@ -114,3 +114,14 @@
 ###### 你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/11_20.ts)
 ************
+
+####  Same Tree(相同的树)
+##### 给定两个二叉树，编写一个函数来检验它们是否相同。如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。
+###### 说明:
+######  Definition for a binary tree node.
+######  function TreeNode(val) {
+######      this.val = val;
+######      this.left = this.right = null;
+######
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/11_20.ts)
+************
