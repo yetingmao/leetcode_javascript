@@ -117,3 +117,7 @@ var isSameTree = function (p: any, q: any) {
     }
     return ((p !== null && q !== null) && (p.val === q.val) && isSameTree(p.left, q.left) && isSameTree(p.right, q.right));
 };
+//17.二叉树的最大深度
+var maxDepth = function (root) {
+    return root === null ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+};
