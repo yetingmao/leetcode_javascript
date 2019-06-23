@@ -121,3 +121,14 @@ var isSameTree = function (p: any, q: any) {
 var maxDepth = function (root) {
     return root === null ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
 };
+//18,路径总和
+var hasPathSum = function (root, sum) {
+    if (root === null) {
+        return false;
+    }
+    if (root.left !== null || root.right !== null) {
+        return (hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val));
+    } else {
+        return (sum === root.val ? true : false);
+    }
+};
