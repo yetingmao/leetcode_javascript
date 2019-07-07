@@ -132,3 +132,68 @@ var hasPathSum = function (root, sum) {
         return (sum === root.val ? true : false);
     }
 };
+//19  对象的深度
+var deep = function (object) {
+    if (object === null) {
+        return 0;
+    } else {
+        const arr = [];
+        for (const key in object) {
+            if (object.hasOwnProperty(key)) {
+                const element = object[key];
+                const n = deep(element);
+                arr.push(n);
+            }
+        }
+        if (arr.length === 0) {
+            return 1;
+        } else if (arr.length === 1) {
+            return arr[0] + 1;
+        } else {
+            const a = arr.sort((a, b) => a - b);
+            return a[a.length - 1] + 1;
+        }
+    }
+}
+//20 ，二叉树的层次遍历 II
+var levelOrderBottom = function (root) {
+    const arr = [];
+    if (root === null) {
+        return [];
+    }
+    function find(array, tree, n) {
+        n++;
+        if (tree.left) {
+            const a = {};
+            a[n] = tree.left.val;
+            array.push(a);
+            find(array, tree.left, n)
+        }
+        if (tree.right) {
+            const a = {};
+            a[n] = tree.right.val;
+            array.push(a);
+            find(array, tree.right, n)
+        }
+    }
+    find(arr, root, 1);
+    const arrMap = new Map();
+    for (const object of arr) {
+        for (const key in object) {
+            if (object.hasOwnProperty(key)) {
+                const element = object[key];
+                if (!arrMap.has(key)) {
+                    arrMap.set(key, []);
+                };
+                const temp = arrMap.get(key);
+                temp.push(element);
+            }
+        }
+    }
+    const values = [];
+    for (const [key, value] of arrMap) {
+        values.push(value);
+    }
+    values.unshift([root.val]);
+    return values.reverse;
+};
