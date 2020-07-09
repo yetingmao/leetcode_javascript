@@ -1,6 +1,6 @@
 ## 说明 ##
 * 在leetcode上的题目
-* 使用typescript语言
+* 使用typescript和JavaScript语言
 * 先从初级的题目开始，至少一周做一道
 
 ## 依赖 ##
