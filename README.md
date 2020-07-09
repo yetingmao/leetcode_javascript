@@ -158,3 +158,11 @@
 ##### 对每一个孩子，检查是否存在一种方案，将额外的 extraCandies 个糖果分配给孩子们之后，此孩子有 最多 的糖果。注意，允许有多个孩子同时拥有 最多 的糖果数目。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
 ************
+
+
+####  重新排列数组
+##### 给你一个数组 nums ，数组中有 2n 个元素，按 [x1,x2,...,xn,y1,y2,...,yn] 的格式排列
+##### 请你将数组按 [x1,y1,x2,y2,...,xn,yn] 格式重新排列，返回重排后的数组。 
+##### 用了三种方法去实现。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
+************
