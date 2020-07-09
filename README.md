@@ -147,3 +147,8 @@
 ##### 给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/11_20.ts)
 ************
+
+####  一维数组的动态和
+##### 给你一个数组 nums 。数组「动态和」的计算公式为：runningSum[i] = sum(nums[0]…nums[i]) 。请返回 nums 的动态和。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
+************
