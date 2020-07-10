@@ -3,7 +3,7 @@
  * @Autor: yetm
  * @Date: 2020-07-09 11:07:35
  * @LastEditors: yetm
- * @LastEditTime: 2020-07-09 16:52:14
+ * @LastEditTime: 2020-07-10 09:31:56
  */
 /**
  * @description:21 给你一个数组 nums 。数组「动态和」的计算公式为：runningSum[i] = sum(nums[0]…nums[i]) 。请返回 nums 的动态和。
@@ -61,4 +61,14 @@ var shuffle2 = function (nums, n) {
         result.push(nums[j], newArr[j]);
     }
     return result
+};
+/**
+ * @description:24左旋转字符串
+ * @param {type}{string} s
+ * @param {number} n
+ * @return:{string}
+ * @author: yetm
+ */
+var reverseLeftWords = function (s, n) {
+    return s.substr(n) + s.substr(0, n);
 };
