@@ -3,7 +3,7 @@
  * @Autor: yetm
  * @Date: 2020-07-09 11:07:35
  * @LastEditors: yetm
- * @LastEditTime: 2020-07-10 10:45:36
+ * @LastEditTime: 2020-07-10 17:09:11
  */
 /**
  * @description:21 给你一个数组 nums 。数组「动态和」的计算公式为：runningSum[i] = sum(nums[0]…nums[i]) 。请返回 nums 的动态和。
@@ -91,4 +91,62 @@ var game = function (guess, answer) {
 var game1 = function (guess, answer) {
 
     return (guess.filter((n, i) => n === answer[i])).length;
+};
+/**
+ * @description:26宝石与石头
+ * @param {string} J
+ * @param {string} S
+ * @return {number}
+ * @author: yetm
+ */
+var numJewelsInStones = function (J, S) {
+    let n = 0;
+    for (const i of S) {
+        if (J.includes(i)) {
+            n++;
+        }
+    }
+    return n;
+};
+/**
+ * @description:27 整数的各位积和之差
+ * @param {number} n
+ * @return {number}
+ * @author: yetm
+ */
+var subtractProductAndSum = function (n) {
+    const arr = `${n}`.split('');
+    let s = 1;
+    let m = 0;
+    for (const i of arr) {
+        s *= parseInt(i, 10);
+        m += parseInt(i, 10);
+    }
+    return s - m;
+};
+/**
+ * @description:28 IP 地址无效化
+ * @param {string} address
+ * @return {string}
+ * @author: yetm
+ */
+var defangIPaddr = function (address) {
+    return address.replace(/\./g, "[.]")
+};
+/**
+ * @description:29 将数字变成 0 的操作次数
+ * @param {number} num
+ * @return {number}
+ * @author: yetm
+ */
+var numberOfSteps = function (num) {
+    if (num === 0) {
+        return 0
+    }
+    const data = num % 2 === 0 ? num / 2 : num - 1;
+    return data === 0 ? 1 : 1 + numberOfSteps(data)
+};
+var numberOfSteps1 = function (num) {
+    // 这里>>位运算符的意思是如果是偶数等于除于了2，如果是计数则是除于了2又减去了1
+    return num > 1 ? 1 + (num % 2) + numberOfSteps1(num >> 1) : num
 };

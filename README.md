@@ -177,3 +177,25 @@
 ##### 输入的guess数组为 小A 每次的猜测，answer数组为 小B 每次的选择。guess和answer的长度都等于3。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
 ************
+
+####  宝石与石头
+##### 给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。 S 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有多少是宝石。
+##### J 中的字母不重复，J 和 S中的所有字符都是字母。字母区分大小写，因此"a"和"A"是不同类型的石头。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
+************
+
+####  整数的各位积和之差
+##### 给你一个整数 n，请你帮忙计算并返回该整数「各位数字之积」与「各位数字之和」的差。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
+************
+
+####  IP 地址无效化
+##### 给你一个有效的 IPv4 地址 address，返回这个 IP 地址的无效化版本。所谓无效化 IP 地址，其实就是用 "[.]" 代替了每个 "."。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
+************
+
+####  将数字变成 0 的操作次数
+##### 给你一个非负整数 num ，请你返回将它变成 0 所需要的步数。 如果当前数字是偶数，你需要把它除以 2 ；否则，减去 1 。
+##### 两种方法，第二种学会了 >> 运算符
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
+************
