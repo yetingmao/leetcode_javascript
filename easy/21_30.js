@@ -3,7 +3,7 @@
  * @Autor: yetm
  * @Date: 2020-07-09 11:07:35
  * @LastEditors: yetm
- * @LastEditTime: 2020-07-10 17:09:11
+ * @LastEditTime: 2020-07-13 17:38:58
  */
 /**
  * @description:21 给你一个数组 nums 。数组「动态和」的计算公式为：runningSum[i] = sum(nums[0]…nums[i]) 。请返回 nums 的动态和。
@@ -149,4 +149,19 @@ var numberOfSteps = function (num) {
 var numberOfSteps1 = function (num) {
     // 这里>>位运算符的意思是如果是偶数等于除于了2，如果是计数则是除于了2又减去了1
     return num > 1 ? 1 + (num % 2) + numberOfSteps1(num >> 1) : num
+};
+
+/**
+ * @description: 30 按既定顺序创建目标数组
+ * @param {number[]} nums
+ * @param {number[]} index
+ * @return {number[]}
+ * @author: yetm
+ */
+var createTargetArray = function (nums, index) {
+    const result = [];
+    for (let i = 0; i < index.length; i++) {
+        result.splice(index[i], 0, nums[i])
+    }
+    return result;
 };
