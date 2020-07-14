@@ -208,3 +208,10 @@
 ##### 请你返回目标数组。题目保证数字插入位置总是存在
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
 ************
+
+####  解压缩编码列表
+##### 给你一个以行程长度编码压缩的整数列表 nums 。考虑每对相邻的两个元素 [freq, val] = [nums[2*i], nums[2*i+1]] （其中 i >= 0 ），
+##### 每一对都表示解压后子列表中有 freq 个值为 val 的元素，你需要从左到右连接所有子列表以生成解压后的列表。
+##### 请你返回解压后的列表。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/21_30.js)
+************
