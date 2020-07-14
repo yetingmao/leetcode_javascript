@@ -220,3 +220,8 @@
 ##### 给你一个数组 nums，对于其中每个元素 nums[i]，请你统计数组中比它小的所有数字的数目。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/31_40.js)
 ************
+
+####  统计位数为偶数的数字
+##### 给你一个整数数组 nums，请你返回其中位数为 偶数 的数字的个数。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/31_40.js)
+************

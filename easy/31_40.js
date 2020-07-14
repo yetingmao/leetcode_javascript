@@ -3,7 +3,7 @@
  * @Autor: yetm
  * @Date: 2020-07-14 09:54:03
  * @LastEditors: yetm
- * @LastEditTime: 2020-07-14 10:22:24
+ * @LastEditTime: 2020-07-14 14:06:32
  */
 /**
  * @description: 31 解压缩编码列表
@@ -29,4 +29,13 @@ var smallerNumbersThanCurrent = function (nums) {
     const sortArr = [...nums];
     sortArr.sort((a, b) => a - b);
     return nums.map(item => sortArr.findIndex(s => s === item));
+};
+/**
+ * @description:  33.统计位数为偶数的数字
+ * @param {number[]} nums
+ * @return {number}
+ * @author: yetm
+ */
+var findNumbers = function (nums) {
+    return nums.filter(item => `${item}`.length % 2 === 0).length
 };
