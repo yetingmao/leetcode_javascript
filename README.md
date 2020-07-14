@@ -1,6 +1,6 @@
 ## 说明 ##
 * 在leetcode上的题目
-* 使用typescript和JavaScript语言
+* 使用typescript和javaScript语言
 * 先从初级的题目开始，至少一周做一道
 
 ## 依赖 ##
@@ -213,5 +213,10 @@
 ##### 给你一个以行程长度编码压缩的整数列表 nums 。考虑每对相邻的两个元素 [freq, val] = [nums[2*i], nums[2*i+1]] （其中 i >= 0 ），
 ##### 每一对都表示解压后子列表中有 freq 个值为 val 的元素，你需要从左到右连接所有子列表以生成解压后的列表。
 ##### 请你返回解压后的列表。
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/31_40.js)
+************
+
+####  有多少小于当前数字的数字
+##### 给你一个数组 nums，对于其中每个元素 nums[i]，请你统计数组中比它小的所有数字的数目。
 [Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/31_40.js)
 ************
