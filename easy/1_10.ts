@@ -12,6 +12,16 @@ const twoSum = (nums: number[], target: number) => {
     }
     return arr;
 };
+var twoSum2 = function (nums, target) {
+    let i = nums.length;
+    while (i > 1) {
+        const last = nums.pop();
+        if (nums.indexOf(target - last) > -1) {
+            return [nums.indexOf(target - last), nums.length];
+        }
+        i--;
+    }
+};
 
 //2，Reverse Integer(整数反转)
 const reverse = function (x: number) {
