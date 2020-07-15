@@ -233,5 +233,5 @@
 ************
 #### 统计位数为偶数的数字
 ##### 给你一个整数数组 nums，请你返回其中位数为 偶数 的数字的个数。
-[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/easy/31_40.js)
+[Code](https://github.com/yetingmao/leetcode_javascript/blob/master/middle/1_10.js)
 ************
