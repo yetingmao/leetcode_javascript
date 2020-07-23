@@ -87,7 +87,7 @@ const longestCommonPrefix = function (strs: string[]) {
 };
 
 //5,Valid Parentheses(有效的括号)
-const isValid = function (s: string) {
+const isValid1 = function (s: string) {
     if (s === undefined) {
         return false;
     }
@@ -144,6 +144,27 @@ const isValid = function (s: string) {
         o++;
     }
     return result;
+};
+var isValid2 = function (s: string) {
+    let r = "";
+    let resule = true;
+    for (const i of s) {
+        if (i === "(") {
+            r = ")" + r;
+        } else if (i === "[") {
+            r = "]" + r;
+        } else if (i === "{") {
+            r = "}" + r;
+        } else {
+            if (r[0] !== i) {
+                resule = false;
+                break;
+            } else {
+                r = r.slice(1);
+            }
+        }
+    }
+    return resule && r.length === 0;
 };
 
 //6,Remove Duplicates from Sorted Array(删除排序数组中的重复项)
