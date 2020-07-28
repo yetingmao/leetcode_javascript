@@ -24,7 +24,7 @@ var twoSum2 = function (nums, target) {
 };
 
 //2，Reverse Integer(整数反转)
-const reverse = function (x: number) {
+const reverse1 = function (x: number) {
     if (x === 0) {
         return 0;
     }
@@ -37,6 +37,30 @@ const reverse = function (x: number) {
         return 0;
     }
     return b;
+};
+const reverse2 = function (n: number) {
+    const x = `${n}`;
+    let s = "";
+    let zero = true;
+    for (let i = x.length - 1; i >= 0; i--) {
+        if (x[i] === '0' && zero === true) {
+            continue;
+        } else {
+            zero = false;
+
+            if (i === 0 && x[i] === "-") {
+                s = "-" + s;
+            } else {
+                s += x[i];
+            }
+        }
+
+    }
+    const res = parseInt(s, 10);
+    if ((res <= - Math.pow(2, 31)) || (res >= Math.pow(2, 31) - 1)) {
+        return 0;
+    }
+    return res;
 };
 
 //3,Palindrome Number(回文数)
